@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f7ff;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tagline {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #0d2b4d;
+    line-height: 1.2;
+}
+
+/* Main Content Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.description h2 {
+    margin-bottom: 20px;
+    color: #0d2b4d;
+}
+
+.description p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.description ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.description ul li::before {
+    content: "•";
+    color: #333;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+/* Form Styling */
+.form-container {
+    background-color: #0d2b4d;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.form-container h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d1b2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+}
